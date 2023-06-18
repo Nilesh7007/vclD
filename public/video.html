@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Call</title>
+</head>
+<body>
+  <h1>Video Call</h1>
+  <div id="local-video-container">
+    <video id="local-video" autoplay muted></video>
+    <button id="mic-button" onclick="toggleMic()">Toggle Mic</button>
+    <button id="video-button" onclick="toggleVideo()">Toggle Video</button>
+  </div>
+  
+  <h2>Remote Video</h2>
+  <div id="remote-video-container">
+    <video id="remote-video" autoplay></video>
+  </div>
+  
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="video.js"></script>
+</body>
+</html>

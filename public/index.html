@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Call App</title>
+</head>
+<body>
+  <h1>Join a Video Room</h1>
+  <form id="join-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <label for="room">Room No:</label>
+    <input type="text" id="room" required>
+    <button type="submit">Join Room</button>
+  </form>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
